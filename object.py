@@ -17,5 +17,3 @@ def create_object():
         row = random.choice(rows)
         return Object(row["Object"], row["Countability"], row["Default_Number"])
     
-
-print(create_object())

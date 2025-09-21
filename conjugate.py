@@ -57,8 +57,3 @@ def conjugate(verb, template, subject):
        conjugated_pharse = conjugated_pharse.replace("[PastParticiple]", verb.past)
        return conjugated_pharse
     
-verb = create_verb()
-template = create_template()
-subject = create_subject()
-
-print(conjugate(verb, template, subject))
