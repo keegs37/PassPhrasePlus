@@ -45,7 +45,7 @@ def conjugate(verb, template, subject):
     elif template.tense == "present" and template.aspect == "perfect":
        conjugated_pharse = template.pattern
        conjugated_pharse = conjugated_pharse.replace("[Subject]", subject.subject)
-       conjugated_pharse = conjugated_pharse.replace("[PastParticiple]", verb.past)
+       conjugated_pharse = conjugated_pharse.replace("[PastParticiple]", verb.past_participle)
        if subject.number == "singular":
             conjugated_pharse = conjugated_pharse.replace("have/has", "has")
        if subject.number == "plural":
@@ -54,6 +54,6 @@ def conjugate(verb, template, subject):
     elif (template.tense == "past" or template.tense == "future") and template.aspect == "perfect":
        conjugated_pharse = template.pattern
        conjugated_pharse = conjugated_pharse.replace("[Subject]", subject.subject)
-       conjugated_pharse = conjugated_pharse.replace("[PastParticiple]", verb.past)
+       conjugated_pharse = conjugated_pharse.replace("[PastParticiple]", verb.past_participle)
        return conjugated_pharse
     

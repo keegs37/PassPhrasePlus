@@ -13,8 +13,16 @@ class Determiner():
 def create_determiner(object):
     with open("data/Determiners.csv") as determiners_csv:
         rows = list(csv.DictReader(determiners_csv))
-        row = random.choice(rows)
-        while row["Compatibility"] == "plural_or_uncount" and object.countability == "countable":
-            row = random.choice(rows)
-        return Determiner(row["Determiner"], row["Compatibility"])
+        def is_compatible(row):
+            comp = row["Compatibility"]
+            if object.countability == "uncountable":
+                return comp in {"any", "uncount", "plural_or_uncount"}
+            if object.default_number == "plural":
+                return comp in {"any", "plural_any", "plural_count", "plural_or_uncount"}
+            return comp in {"any", "singular_any", "singular_count"}
+        filtered = [row for row in rows if is_compatible(row)]
+        if not filtered:
+            filtered = [row for row in rows if row["Compatibility"] == "any"]
+        chosen = random.choice(filtered)
+        return Determiner(chosen["Determiner"], chosen["Compatibility"])
     
