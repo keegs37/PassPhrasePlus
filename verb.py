@@ -19,5 +19,3 @@ def create_verb():
         row = random.choice(rows)
         return Verb(row["Verb_Base"], row["Past"], row["PastParticiple"], row["Gerund"], row["Regularity"])
     
-
-print(create_verb())

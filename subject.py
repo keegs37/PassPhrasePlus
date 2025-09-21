@@ -15,5 +15,3 @@ def create_subject():
         row = random.choice(rows)
         return Subject(row["Subject"], row["Person"], row["Number"])
     
-
-print(create_subject())

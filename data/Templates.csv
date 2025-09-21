@@ -1,0 +1,9 @@
+Tense,Aspect,Pattern
+past,simple,[Subject] [Past]
+future,simple,[Subject] will [Verb_Base]
+present,continuous,[Subject] am/are/is [Gerund]
+past,continuous,[Subject] was/were [Gerund]
+future,continuous,[Subject] will be [Gerund]
+present,perfect,[Subject] have/has [PastParticiple]
+past,perfect,[Subject] had [PastParticiple]
+future,perfect,[Subject] will have [PastParticiple]
