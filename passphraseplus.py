@@ -20,6 +20,7 @@ def main():
     if args.n:
         for i in range(args.n):
             sentence = create_sentence()
+            delimiter = " "
             if args.d:
                 delimiter = args.d
                 sentence = add_delimiter(sentence,args.d)
@@ -29,6 +30,7 @@ def main():
     else:
         for i in range(5):
             sentence = create_sentence()
+            delimiter = " "
             if args.d:
                 delimiter = args.d
                 sentence = add_delimiter(sentence,args.d)

@@ -1,14 +1,10 @@
-  _____              _____  _                        _____  _           
- │  __ ╲            │  __ ╲│ │                      │  __ ╲│ │          
- │ │__) │_ _ ___ ___│ │__) │ │__  _ __ __ _ ___  ___│ │__) │ │_   _ ___ 
- │  ___╱ _` ╱ __╱ __│  ___╱│ '_ ╲│ '__╱ _` ╱ __│╱ _ ╲  ___╱│ │ │ │ ╱ __│
- │ │  │ (_│ ╲__ ╲__ ╲ │    │ │ │ │ │ │ (_│ ╲__ ╲  __╱ │    │ │ │_│ ╲__ ╲
- │_│   ╲__,_│___╱___╱_│    │_│ │_│_│  ╲__,_│___╱╲___│_│    │_│╲__,_│___╱
+# PassPhrasePlus
                                                                         
                                                                         
 PassPhrasePlus is a Python command-line tool to generate secure and (somewhat) memorable passwords!
 
 Usage:
+
     - Without parameters, it will output 5 passphrases. Each passphrase is separated by a space and contains no special characters or numbers.
 
     - Using the -n flag, you can specify the number of passphrases you want generated.  
